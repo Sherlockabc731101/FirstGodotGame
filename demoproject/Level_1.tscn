@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwbanuawgpug6"]
+
+[ext_resource type="Texture2D" uid="uid://burduaja8vs0m" path="res://player-idle-1.png" id="1_cp46j"]
+[ext_resource type="Script" path="res://Level_1.gd" id="1_v7ubb"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(3, 0)
+script = ExtResource("1_v7ubb")
+
+[node name="FirstGodotGame2D" type="FirstGodotGame2D" parent="."]
+speed = 200.0
+position = Vector2(533, 300)
+
+[node name="Player-idle-1" type="Sprite2D" parent="FirstGodotGame2D"]
+position = Vector2(2, -4)
+texture = ExtResource("1_cp46j")
+
+[connection signal="First_Godot_Game_2D_Signal" from="FirstGodotGame2D" to="." method="_on_first_godot_game_2d_first_godot_game_2d_signal"]

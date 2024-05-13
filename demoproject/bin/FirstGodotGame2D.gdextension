@@ -1,0 +1,9 @@
+[configuration]
+
+entry_symbol = "first_godot_game_2d_init"
+compatibility_minimum = 4.2
+
+[libraries]
+
+windows.debug.x86_64 = "res://bin/FirstGodotGame2D.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "res://bin/FirstGodotGame2D.windows.template_debug.x86_64.dll"
